@@ -1,0 +1,3 @@
+C:/Users/nepes/source/repos/myCproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/nepes/source/repos/myCproject/cmake-build-debug/CMakeFiles/myCproject.dir
+C:/Users/nepes/source/repos/myCproject/cmake-build-debug/CMakeFiles/edit_cache.dir

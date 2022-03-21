@@ -1,0 +1,11 @@
+# ninja log v5
+0	243	6692259732303711	CMakeFiles/myCproject.dir/main.c.obj	408c3638c3d73ded
+247	516	6692259734973881	myCproject.exe	4ee0c25e5657b76d
+3	179	6692268070965271	CMakeFiles/myCproject.dir/main.c.obj	408c3638c3d73ded
+180	398	6692268073145561	myCproject.exe	4ee0c25e5657b76d
+4	517	6695101848250618	CMakeFiles/myCproject.dir/main.c.obj	408c3638c3d73ded
+518	1072	6695101853738468	myCproject.exe	4ee0c25e5657b76d
+4	170	6695102292080710	CMakeFiles/myCproject.dir/main.c.obj	408c3638c3d73ded
+171	351	6695102293845032	myCproject.exe	4ee0c25e5657b76d
+3	186	6695102447454340	CMakeFiles/myCproject.dir/main.c.obj	408c3638c3d73ded
+189	381	6695102449357080	myCproject.exe	4ee0c25e5657b76d
