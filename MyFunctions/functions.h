@@ -14,18 +14,35 @@
 
 //n inci sıradaki fibonacci sayısını hesaplar
 int fibonacci(int n) {
-    if (n == 0) return 0;
-    else if (n == 1) return 1;
+    if (n <= 1) return n;
     else return fibonacci(n-1) + fibonacci(n-2);
 }
-
-int sayiUret(int number) {
-    int numberArray[number];
-    for (int i = 0; i < number; i++) {
-        numberArray[i] = rand();
+/* 0 1 1 2 3, 5 8 13 21 34 */
+int fibonacciIterative(int n) {
+    if(n <= 1) return n;
+    int fibo = 0, sayi1 = 0, sayi2 = 1;
+    for(int i=0; i < n-2; i++) {
+        fibo = sayi1 + sayi2;
+        sayi1 = sayi2;
+        sayi2 = fibo;
     }
-    return numberArray;
+    return fibo;
 }
+
+/* Recursive olarak ebob bulma*/
+int ebob(int x, int y) { 
+    if (x == y) return x;
+    if (x > y) return ebob(x - y, y);
+    return ebob(x, y - x);
+}
+
+//int sayiUret(int number) {
+//    int numberArray[number];
+//    for (int i = 0; i < number; i++) {
+//        numberArray[i] = rand();
+//    }
+//    return numberArray;
+//}
 
 int max_diff(int n[]) {
     int min = n[0];
@@ -50,9 +67,14 @@ int tutulanSayi(int n, int buyuk, int kucuk) {
     if(n == buyuk) return buyuk;
     if(n == kucuk) return kucuk;
     if(n >= buyuk/2) {
-        tutulanSayi(n, buyuk, buyuk/2);
+        return tutulanSayi(n, buyuk, buyuk/2);
     }
     else if(n <= buyuk/2){
-        tutulanSayi(n, buyuk/2, kucuk);
+        return tutulanSayi(n, buyuk/2, kucuk);
     }
+}
+
+int theBiggestOfTwoNumbers(int a, int b) {
+    if(a > b) return a;
+    else return b;
 }

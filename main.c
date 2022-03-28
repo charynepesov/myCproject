@@ -1,19 +1,29 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#include <unistd.h>
 #include "MyFunctions/functions.h"
+
 
 int main() {
     // to store the execution time of code
     double time_spent = 0.0;
 
-    clock_t begin = clock();
-    // do some stuff here
 
-    int sayi=0;
-    printf("lutfen bir ile 100 arasi sayi giriniz");
-    scanf("%d \n", &sayi);
-    int sayi2 = tutulanSayi(sayi, 100, 1);
-    printf("%d\n", sayi2);
+
+
+
+
+    
+    int sayi1,sayi2;
+    printf("İki faklı sayi girin");
+    scanf("%d %d", &sayi1, &sayi2);
+
+    clock_t begin = clock();
+    
+    int sonuc = ebob(sayi1, sayi2);
+    printf("ebob(%d,%d) = %d\n", sayi1, sayi2, sonuc);
 
     clock_t end = clock();
 
